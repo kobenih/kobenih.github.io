@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+  <div class="container">
+    <a class="navbar-brand" href="#">kobe</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item">
+          <button id="modeToggle" class="btn btn-outline-light ms-3">🌙 Dark Mode</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Hero Section -->
+<section id="home" class="hero text-white text-center d-flex align-items-center">
+  <div class="container position-relative">
+    <div id="particle-container"></div> <!-- Tempat Partikel -->
+
+    <div class="profile-container mb-4">
+      <img src="syg.jpg" alt="Profile" class="img-fluid rounded-circle profile-img">
+    </div>
+
+    <h1 class="display-4 fade-in">kobe</h1>
+<p class="lead fade-in">A Passionate Web Developer | Otaku for Life</p>
+
+    <a href="#portfolio" class="btn btn-outline-light btn-lg mt-4">Explore My Work</a>
+  </div>
+</section>
+
+
+
+  
+    <!-- About Section -->
+<section id="about" class="py-5 text-center">
+  <h2>About Me</h2>
+        <p>
+          Saya seorang pengembang web yang bersemangat dan senang membangun situs web dan aplikasi yang modern dan responsif. 
+          Saat saya tidak sedang coding, saya membenamkan diri dalam anime dan manga, selalu mencari serial bagus berikutnya untuk ditonton atau dibaca. 
+          Kecintaan saya terhadap teknologi dan budaya pop membuat saya tetap terinspirasi dan kreatif.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Portfolio Section -->
+<section id="portfolio" class="py-5">
+  <div class="container text-center">
+    <h2 class="mb-4" style="font-weight: bold;">My Work</h2>
+    <h4 class="mb-5">Rekomendasi anime yang jarang diketahui tapi keren</h4>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm border-0 h-100 card-hover">
+          <img src="hero.jpg" class="card-img-top" alt="Code Geas">
+          <div class="card-body">
+            <h5 class="card-title">Code Geas</h5>
+            <p class="card-text">
+              Anime satu ini menarik, si mc rela mengorbankan dirinya demi dunia (gk mau banyak spoiler sih karena animenya bagus).
+            </p>
+            <a href="https://myanimelist.net/anime/1575/Code_Geass__Hangyaku_no_Lelouch" class="btn btn-hover mt-3">
+              Lihat Selengkapnya <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm border-0 h-100 card-hover">
+          <img src="bro.jpg" class="card-img-top" alt="Full Metal Alchemist">
+          <div class="card-body">
+            <h5 class="card-title">Full Metal Alchemist</h5>
+            <p class="card-text">
+              Master piece! Anime ini gk ada kurangnya lohh, happy ending, mc bahagia, selamat dari bencana.
+            </p>
+            <a href="https://myanimelist.net/anime/121/Fullmetal_Alchemist" class="btn btn-hover mt-3">
+              Lihat Selengkapnya <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm border-0 h-100 card-hover">
+          <img src="holo.jpg" class="card-img-top" alt="Ookami to Koushinryou">
+          <div class="card-body">
+            <h5 class="card-title">Ookami to Koushinryou</h5>
+            <p class="card-text">
+              Wajib masuk list! Anime ini mengajarkan dasar ekonomi, perdagangan, dan negosiasi.
+            </p>
+            <a href="https://myanimelist.net/anime/51122/Ookami_to_Koushinryou__Merchant_Meets_the_Wise_Wolf?q=Ookami%20no%20ko&cat=anime" class="btn btn-hover mt-3">
+              Lihat Selengkapnya <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Contact Section -->
+<section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Get in Touch</h2>
+    <form action="#" method="post">
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <input type="text" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="col-md-6 mb-3">
+          <input type="email" class="form-control" placeholder="Your Email" required>
+        </div>
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary mb-4">Send Message</button>
+      </div>
+    </form>
+
+    <!-- Ikon Media Sosial -->
+    <div class="text-center">
+      <h2 class="text-center mb-4">Pencet logo untuk berteman</h2>
+      <a href="https://wa.me/0882020021533" target="_blank" class=" mx-2" title="Chat via WhatsApp">
+        <i class="bi bi-whatsapp" style="font-size: 2rem;"></i>
+      </a>
+      <a href="https://instagram.com/kk_kobee" target="_blank" class="mx-2" title="Follow on Instagram">
+        <i class="bi bi-instagram" style="font-size: 2rem;"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <footer class="text-center py-3 bg-dark text-white">
+    <p>&copy; 2024 kobe. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,285 @@
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa; /* Light background for light mode */
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.hero {
+  height: 60vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ), 
+    #8B0000; /* Dark red color */
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for visibility */
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+  font-weight: bold;
+  color: #8b0000;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+#about img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #333;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  #about img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* Styling foto profil di hero section */
+.profile-container {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+/* Responsive Text in Hero */
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+}
+
+/* Container partikel di hero */
+#particle-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.particle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  animation: float 10s linear infinite;
+  opacity: 0.8;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10vh);
+    opacity: 0;
+  }
+}
+
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.btn-hover {
+  font-weight: bold;
+  color: #8b0000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-hover:hover {
+  background-color: #8b0000;
+  color: #ffffff;
+}
+
+.btn i {
+  margin-left: 5px;
+}
+
+/* Transisi Umum untuk Body */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa; /* Latar belakang terang untuk mode terang */
+  transition: background-color 0.5s ease, color 0.5s ease; /* Transisi halus */
+}
+
+/* Gaya Mode Gelap */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .navbar {
+  background-color: #1c1c1c;
+}
+
+body.dark-mode .card {
+  background-color: #1f1f1f; /* Latar belakang gelap untuk kartu */
+  color: #e0e0e0;
+  border-color: #333;
+}
+
+/* Tambahkan transisi untuk tombol */
+body.dark-mode .btn-outline-light {
+  border-color: #e0e0e0;
+  color: #e0e0e0;
+}
+
+body.dark-mode .btn-primary {
+  background-color: #6200ea;
+  border: none;
+}
+
+body.dark-mode .btn-primary:hover {
+  background-color: #3700b3;
+}
+
+/* Contact Section Styles */
+#contact h2 {
+  color: #333; /* Hitam untuk judul */
+}
+
+#contact p,
+#contact input,
+#contact textarea {
+  color: #333; /* Hitam untuk teks dan input */
+}
+
+#contact .form-control {
+  background-color: #f8f9fa; /* Latar belakang putih untuk input di light mode */
+}
+
+#contact .form-control::placeholder {
+  color: #777; /* Warna placeholder */
+}
+
+/* Dark Mode Overrides */
+body.dark-mode #contact h2,
+body.dark-mode #contact p,
+body.dark-mode #contact input,
+body.dark-mode #contact textarea {
+  color: #e0e0e0; /* Warna teks untuk dark mode */
+}
+
+body.dark-mode #contact .form-control {
+  background-color: #333; /* Latar belakang gelap untuk input di dark mode */
+  color: #e0e0e0; /* Warna teks untuk input di dark mode */
+}
+
+body.dark-mode #contact .form-control::placeholder {
+  color: #aaa; /* Warna placeholder di dark mode */
+}
+
+}
+#modeToggle {
+  transition: transform 0.3s;
+}
+
+#modeToggle:hover {
+  transform: scale(1.1);
+}
+.social-icon {
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  color: #ff6f61; /* Warna saat hover */
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero {
+  background-attachment: fixed; /* Efek parallax */
+  background-position: center;
+  background-size: cover;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.section-divider {
+  height: 5px;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  animation: slide 2s infinite;
+}
+
+@keyframes slide {
+  0% { transform: translateX(-100%); }
+  50% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
